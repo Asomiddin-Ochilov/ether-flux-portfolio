@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@source "../src";
+@custom-variant dark (&:is(.dark *));
 
 *{
    font-family: "Raleway", sans-serif !important;
@@ -6,9 +9,6 @@
    padding: 0;
    margin: 0;
 }
-@source "../src";
-@import "tw-animate-css";
-@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
